@@ -1,1 +1,10 @@
-<h1>TIENDA</h1>
+<h1>{{title}}</h1>
+<button id="botonjq">Mostrar Alerta</button>
+<br/>
+<p id="textojq" class="alert alert-warning">El texto descriptivo, en este caso un retrato de una persona, provoca en el receptor una imagen tal que la realidad descripta
+cobra forma, se materializa en su mente.</p>
+<br/>
+<div id="caja" style="border: 1px solid black; width:150px; height: 50px">El texto descriptivo, en este caso un retrato de una persona, provoca en el receptor una imagen tal que la realidad descripta
+cobra forma, se materializa en su mente.</div>
+<br/>
+<app-simple-tiny [elementId]="'descripcionTienda'" (onEditorKeyup)="textoRichEditor($event)"></app-simple-tiny>

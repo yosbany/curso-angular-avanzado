@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app.routing';
 
+import { ModuloEmailModule } from './moduloemail/moduloemail.module';
+
 
 import { AppComponent } from './app.component';
+import { SimpleTinyComponent } from './components/simple-tiny/simple-tiny.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
 import { ParquesComponent } from './components/parques/parques.component';
 import { HomeComponent } from './components/home/home.component';
@@ -21,12 +24,14 @@ import { KeepersComponent } from './components/keepers/keepers.component';
     HomeComponent,
     AnimalsComponent,
     ContactComponent,
-    KeepersComponent
+    KeepersComponent,
+    SimpleTinyComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    ModuloEmailModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
